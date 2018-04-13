@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Vue.js v2</title>
+  <title>Dungeon 2</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap-customized.css" rel="stylesheet">
+
+  <style type="text/css">
+    html, body {
+        height:100%;
+    } 
+    body{
+      background: url('images/bg.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+    }
+  </style>
+  
 </head>
+
 <body>
-  <div id="roles"></div>
-  <script src="dist/roles.js"></script>
+    <div id="main-tabs" />
+  
+
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- main JavaScript
+    ================================================== -->
+  <script src="dist/dungeon2_tools.js"></script>
 </body>
+
 </html>

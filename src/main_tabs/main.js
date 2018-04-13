@@ -1,7 +1,7 @@
 import Vue from 'vue'
-import App from './roles.vue'
+import App from './mainTabs.vue'
 
 new Vue({
-  el: '#roles',
+  el: '#main-tabs',
   render: h => h(App)
 })

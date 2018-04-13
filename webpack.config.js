@@ -3,7 +3,7 @@ var webpack = require("webpack")
 
 module.exports = {
   entry: {
-    roles: "./src/roles/main.js",
+    dungeon2_tools: "./src/main_tabs/main.js",
   },
   output: {
     path: path.resolve(__dirname, "./dist"),

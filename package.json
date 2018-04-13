@@ -6,12 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env  webpack-dev-server --open --hot",
-    "build": "cross-env  webpack --progress --hide-modules",
+    "build": "cross-env  webpack --progress --hide-modules && cp dist/*.js js/",
     "check": "cross-env webpack --config webpack_check.config.js --hide-modules > /dev/null"
   },
   "dependencies": {
     "babel-preset-latest": "^6.24.1",
     "cross-env": "^5.1.4",
+    "node-sass": "^4.8.3",
+    "pug": "^2.0.3",
+    "sass": "^1.1.1",
+    "sass-loader": "^6.0.7",
     "vue": "^2.5.16",
     "vue-template-compiler": "^2.5.16"
   },
