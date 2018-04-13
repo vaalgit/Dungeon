@@ -14,16 +14,26 @@
 
         .tab-content
           .tab-pane.fade.show.active(id="pills-roles" role="tabpanel" aria-labelledby="pills-roles-tab")
-            .content roles test content
+            roles-tab
           .tab-pane.fade.show(id="pills-items" role="tabpanel" aria-labelledby="pills-items-tab")
-            .content items test content
+            items-tab
           .tab-pane.fade.show(id="pills-dungeons" role="tabpanel" aria-labelledby="pills-dungeons-tab")
-            .content dungeons test content
+            dungeons-tab
 
 </template>
 
 <script>
+import Vue from "vue"
+import RolesTab from "./tabs/roles.vue"
+import ItemsTab from "./tabs/items.vue"
+import DungeonsTab from "./tabs/dungeons.vue"
+
 export default {
+  components:{
+    RolesTab,
+    ItemsTab,
+    DungeonsTab
+  },
   data () {
     return {
       message: 'Helo, Vue.js 2.0'
@@ -45,14 +55,19 @@ export default {
     height: 100%;
 
 .role-content
-  padding-top: 5%;
-  padding-bottom: 5%;
-  border: 2px solid blue
+  // border: 2px solid blue
   display: inline-block;
   vertical-align: middle;
   width: 70%;
   height: 75%;
   background: rgb(128,128,128)
+  > ul
+    background-color: white;
+    > li
+      > a
+        height: 50px;
+        font-size: 25px;
+        line-height: normal; 
 
 .nav.nav-tabs.nav-justified
   > a
