@@ -7,12 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env  webpack-dev-server --open --hot",
     "build": "cross-env  webpack --progress --hide-modules && cp dist/*.js js/",
-    "check": "cross-env webpack --config webpack_check.config.js --hide-modules > /dev/null"
+    "check": "cross-env webpack --config webpack_check.config.js --hide-modules > /dev/null",
+    "clean": "rimraf ./dist && mkdir dist"
   },
   "dependencies": {
     "babel-preset-latest": "^6.24.1",
     "cross-env": "^5.1.4",
     "node-sass": "^4.8.3",
+    "npm": "^5.8.0",
     "pug": "^2.0.3",
     "sass": "^1.1.1",
     "sass-loader": "^6.0.7",
