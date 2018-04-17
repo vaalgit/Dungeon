@@ -37,6 +37,7 @@ export default {
   methods:{
     confirm_add(){
       this.$parent.$emit('role_tab_name',this.role_name);
+      this.$parent.$off(['role_tab_name']);
     }
   }
 };

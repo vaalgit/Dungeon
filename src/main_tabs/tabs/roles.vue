@@ -52,7 +52,7 @@ export default {
       var id = $(".nav-pills.role-sub-tab").children().length; //think about it ;)
 			var tabId = "role_" + id;
 			console.log(tabId);
-      $(e.target)
+      $(e.target) 
         .closest("a")
         .before(
           '<a class="nav-link" data-toggle="pill" role="tab" aria-controls="v-pills-home" href="#contact_' +
