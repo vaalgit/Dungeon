@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env  webpack-dev-server --mode=development --open --hot",
-    "build": "cross-env  webpack --progress --hide-modules && cp dist/*.js js/",
+    "build": "cross-env  webpack --progress --hide-modules && cp dist/*.js static/js/",
     "check": "cross-env webpack --config webpack_check.config.js --hide-modules > /dev/null",
     "clean": "rimraf ./dist && mkdir dist"
   },

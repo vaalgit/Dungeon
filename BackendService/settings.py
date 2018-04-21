@@ -26,7 +26,8 @@ SECRET_KEY = 'ruz&#x7u1r8-r4t=)-c%-oc9@dv=n1c$@dhcaqo)r#fm_w68$*'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'dun2-utils.herokuapp.com'
+    'dun2-utils.herokuapp.com',
+    'localhost'
 ]
 
 
