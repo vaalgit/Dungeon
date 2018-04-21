@@ -3,4 +3,7 @@
 
 # node js modules
 /node_modules
+
+# python 
 /db.sqlite3
+/BackendService/__pycache__
