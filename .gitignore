@@ -1,5 +1,6 @@
 # vscode
 .vscode/
 
-# node js
-node_modules/
+# node js modules
+/node_modules
+/db.sqlite3
