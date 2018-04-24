@@ -29,7 +29,7 @@ pip install -r requirements.txt
 # Running Locally
 
 ``` bash
-python manage.py runserver localhost:8080
+python manage.py runserver localhost:8080 --nostatic
 
 ```
 Your app should now be running on [localhost:8080](http://localhost:8080/).
@@ -40,10 +40,11 @@ Your app should now be running on [localhost:8080](http://localhost:8080/).
 > You can add remote configuration in .git\config
 Sample:
 
+```bash
 [remote "heroku"]
 	url = https://git.heroku.com/[heroku-instance-name].git
 	fetch = +refs/heads/*:refs/remotes/heroku/*
-
+```
 
 ```bash
 heroku create
